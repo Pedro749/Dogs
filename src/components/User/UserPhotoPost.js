@@ -9,9 +9,9 @@ import { PHOTO_POST } from '../../Api';
 import { useNavigate } from 'react-router-dom';
 
 const UsePhotoPost = () => {
-  const nome = useForm ();
-  const peso = useForm ('number');
-  const idade = useForm ('number');
+  const nome = useForm();
+  const peso = useForm('number');
+  const idade = useForm('number');
   const [img, setImg] = React.useState({});
   const { data, error, loading, request} = useFetch();
   const navigate = useNavigate();
